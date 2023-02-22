@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('Git CheckOut') {
       steps {
-        git(url: 'https://github.com/sameer9644/Kubernetes_Project.git', branch: 'master', poll: true)
+          git 'https://github.com/sameer9644/Kubernetes_Project.git'
       }
     }
 
